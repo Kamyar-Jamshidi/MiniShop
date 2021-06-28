@@ -1,0 +1,8 @@
+D:\Projects\MiniShop\MiniShop.Core\bin\Debug\netcoreapp2.2\MiniShop.Core.deps.json
+D:\Projects\MiniShop\MiniShop.Core\bin\Debug\netcoreapp2.2\MiniShop.Core.dll
+D:\Projects\MiniShop\MiniShop.Core\bin\Debug\netcoreapp2.2\MiniShop.Core.pdb
+D:\Projects\MiniShop\MiniShop.Core\obj\Debug\netcoreapp2.2\MiniShop.Core.csproj.CoreCompileInputs.cache
+D:\Projects\MiniShop\MiniShop.Core\obj\Debug\netcoreapp2.2\MiniShop.Core.AssemblyInfoInputs.cache
+D:\Projects\MiniShop\MiniShop.Core\obj\Debug\netcoreapp2.2\MiniShop.Core.AssemblyInfo.cs
+D:\Projects\MiniShop\MiniShop.Core\obj\Debug\netcoreapp2.2\MiniShop.Core.dll
+D:\Projects\MiniShop\MiniShop.Core\obj\Debug\netcoreapp2.2\MiniShop.Core.pdb

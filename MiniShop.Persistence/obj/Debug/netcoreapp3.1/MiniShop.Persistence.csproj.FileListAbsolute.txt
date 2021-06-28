@@ -1,0 +1,15 @@
+D:\Projects\MiniShop\MiniShop.Persistence\obj\Debug\netcoreapp3.1\MiniShop.Persistence.AssemblyInfoInputs.cache
+D:\Projects\MiniShop\MiniShop.Persistence\obj\Debug\netcoreapp3.1\MiniShop.Persistence.AssemblyInfo.cs
+D:\Projects\MiniShop\MiniShop.Persistence\obj\Debug\netcoreapp3.1\MiniShop.Persistence.csproj.CoreCompileInputs.cache
+D:\Projects\MiniShop\MiniShop.Persistence\bin\Debug\netcoreapp3.1\MiniShop.Persistence.deps.json
+D:\Projects\MiniShop\MiniShop.Persistence\bin\Debug\netcoreapp3.1\MiniShop.Persistence.runtimeconfig.json
+D:\Projects\MiniShop\MiniShop.Persistence\bin\Debug\netcoreapp3.1\MiniShop.Persistence.runtimeconfig.dev.json
+D:\Projects\MiniShop\MiniShop.Persistence\bin\Debug\netcoreapp3.1\MiniShop.Persistence.dll
+D:\Projects\MiniShop\MiniShop.Persistence\bin\Debug\netcoreapp3.1\MiniShop.Persistence.pdb
+D:\Projects\MiniShop\MiniShop.Persistence\bin\Debug\netcoreapp3.1\MiniShop.Core.dll
+D:\Projects\MiniShop\MiniShop.Persistence\bin\Debug\netcoreapp3.1\MiniShop.Core.pdb
+D:\Projects\MiniShop\MiniShop.Persistence\obj\Debug\netcoreapp3.1\MiniShop.Persistence.csproj.AssemblyReference.cache
+D:\Projects\MiniShop\MiniShop.Persistence\obj\Debug\netcoreapp3.1\MiniShop.Persistence.csproj.CopyComplete
+D:\Projects\MiniShop\MiniShop.Persistence\obj\Debug\netcoreapp3.1\MiniShop.Persistence.dll
+D:\Projects\MiniShop\MiniShop.Persistence\obj\Debug\netcoreapp3.1\MiniShop.Persistence.pdb
+D:\Projects\MiniShop\MiniShop.Persistence\obj\Debug\netcoreapp3.1\MiniShop.Persistence.genruntimeconfig.cache
