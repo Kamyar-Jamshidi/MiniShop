@@ -1,8 +1,0 @@
-D:\Projects\MiniShop\MiniShop.Persistence\bin\Debug\netcoreapp2.2\MiniShop.Persistence.deps.json
-D:\Projects\MiniShop\MiniShop.Persistence\bin\Debug\netcoreapp2.2\MiniShop.Persistence.dll
-D:\Projects\MiniShop\MiniShop.Persistence\bin\Debug\netcoreapp2.2\MiniShop.Persistence.pdb
-D:\Projects\MiniShop\MiniShop.Persistence\obj\Debug\netcoreapp2.2\MiniShop.Persistence.csproj.CoreCompileInputs.cache
-D:\Projects\MiniShop\MiniShop.Persistence\obj\Debug\netcoreapp2.2\MiniShop.Persistence.AssemblyInfoInputs.cache
-D:\Projects\MiniShop\MiniShop.Persistence\obj\Debug\netcoreapp2.2\MiniShop.Persistence.AssemblyInfo.cs
-D:\Projects\MiniShop\MiniShop.Persistence\obj\Debug\netcoreapp2.2\MiniShop.Persistence.dll
-D:\Projects\MiniShop\MiniShop.Persistence\obj\Debug\netcoreapp2.2\MiniShop.Persistence.pdb

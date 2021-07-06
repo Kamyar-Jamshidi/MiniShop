@@ -1,18 +1,24 @@
-﻿namespace MiniShop.Core.DTO.Response
+﻿using System.Collections.Generic;
+using System.Text.Json.Serialization;
+
+namespace MiniShop.Core.DTO.Response
 {
     public class LoginResponse
     {
-        public LoginResponse(string token, string firstName, string lastName, bool isSuperAdmin)
+        public LoginResponse(string firstName, string lastName, bool isSuperAdmin, params string[] roles)
         {
-            Token = token;
             FirstName = firstName;
             LastName = lastName;
             IsSuperAdmin = isSuperAdmin;
+
+            Roles = roles;
         }
 
         public string Token { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public bool IsSuperAdmin { get; set; }
+
+        public IEnumerable<string> Roles;
     }
 }

@@ -65,14 +65,6 @@ namespace MiniShop.Persistence.Repositories
             return list.Select(x => MapDbSetToDomain(x)).ToList();
         }
 
-        public async Task<List<EntityDomain>> GetAllAsync(int page, int pageSize)
-        {
-            var list = await _context.ProductCategories.OrderByDescending(x => x.CreateDate)
-                .Skip(page * pageSize).Take(pageSize).ToListAsync();
-
-            return list.Select(x => MapDbSetToDomain(x)).ToList();
-        }
-
         public async Task<int> CreateAsync(EntityDomain entity)
         {
             var entityDBSet = MapDomainToDbSet(entity);

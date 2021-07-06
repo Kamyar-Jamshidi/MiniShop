@@ -25,7 +25,7 @@ namespace MiniShop.Core.UseCases
             Top,
             New
         }
-
+        
         public override async Task<IPresenter<List<GetProductsResponse>>> HandleAsync(ProductTypes request)
         {
             var list = new List<Product>();

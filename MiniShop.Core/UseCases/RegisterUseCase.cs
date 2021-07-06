@@ -11,9 +11,9 @@ namespace MiniShop.Core.UseCases
 {
     public class RegisterUseCase : BaseUseCase<RegisterRequest, bool>
     {
-        protected IAdminRepository _adminRepository { get; set; }
+        protected IUserRepository _adminRepository { get; set; }
 
-        public RegisterUseCase(IAdminRepository adminRepository, IPresenter<bool> presenter)
+        public RegisterUseCase(IUserRepository adminRepository, IPresenter<bool> presenter)
             : base(presenter)
         {
             _adminRepository = adminRepository;
@@ -21,7 +21,6 @@ namespace MiniShop.Core.UseCases
 
         public override async Task<IPresenter<bool>> HandleAsync(RegisterRequest request)
         {
-            var password = HashEncryption.PasswordEncode(request.Password);
             var admin = await _adminRepository.GetByUsernameAsync(request.Username);
 
             if (admin != null)
@@ -30,16 +29,15 @@ namespace MiniShop.Core.UseCases
                 return _presenter;
             }
 
-            admin = new Admin()
+            admin = new User()
             {
                 CreateDate = DateTime.Now,
                 FirstName = request.FirstName,
                 LastName = request.LastName,
                 Username = request.Username,
-                Password = password,
+                Password = request.Password,
                 IsApproved = false,
-                IsSuperAdmin = false,
-                Token = Guid.NewGuid().ToString().Replace("-", string.Empty)
+                IsAdmin = false
             };
 
             await _adminRepository.CreateAsync(admin);

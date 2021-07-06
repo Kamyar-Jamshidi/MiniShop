@@ -9,27 +9,19 @@ namespace MiniShop.Core.UseCases
 {
     public class GetAllUsersUseCase : BaseUseCase<string, List<GetAllUsersReponse>>
     {
-        protected IAdminRepository _adminRepository { get; set; }
+        protected IUserRepository _adminRepository { get; set; }
 
-        public GetAllUsersUseCase(IAdminRepository adminRepository, IPresenter<List<GetAllUsersReponse>> presenter)
+        public GetAllUsersUseCase(IUserRepository adminRepository, IPresenter<List<GetAllUsersReponse>> presenter)
             : base(presenter)
         {
             _adminRepository = adminRepository;
         }
 
-        public override async Task<IPresenter<List<GetAllUsersReponse>>> HandleAsync(string request)
+        public override async Task<IPresenter<List<GetAllUsersReponse>>> HandleAsync(string request = null)
         {
-            var admin = await _adminRepository.GetByTokenAsync(request);
-
-            if (admin == null || !admin.IsSuperAdmin)
-            {
-                _presenter.PresenterFail("You cant access this section!");
-                return _presenter;
-            }
-
             var list = await _adminRepository.GetAllAsync();
 
-            _presenter.PresenterSuccess(list.Select(x => new GetAllUsersReponse(x.Token, x.FirstName, x.LastName, x.Username, x.IsApproved)).ToList());
+            _presenter.PresenterSuccess(list.Select(x => new GetAllUsersReponse(x.Id, x.FirstName, x.LastName, x.Username, x.IsApproved)).ToList());
             return _presenter;
         }
     }

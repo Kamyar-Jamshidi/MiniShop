@@ -9,7 +9,6 @@ namespace MiniShop.Core.Interfaces.Repositories
     {
         Task<T> GetByIdAsync(int id);
         Task<List<T>> GetAllAsync();
-        Task<List<T>> GetAllAsync(int page, int pageSize);
         Task<int> CreateAsync(T entity);
         Task EditAsync(T entity);
         Task RemoveAsync(int id);
